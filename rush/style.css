@@ -1,11 +1,35 @@
 body {
-    background-color: #f8f9fa;
-    padding-top: 30px; /* Adjust padding to prevent content from being hidden behind fixed navbar */    
+    padding-top: 66px; /* Adjust padding to prevent content from being hidden behind fixed navbar */       
 }
+
+/* Main Image */
+.main-image {
+  height: 760px;
+  background-image: url('./img/mainOne.png');
+  background-size: cover;        /* faz a imagem preencher a div */
+  background-position: center;   /* centraliza a imagem */
+  background-repeat: no-repeat;  /* evita repetição */
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 10px 5px 5px black;
+}
+
+.main-image-info {
+  padding: 15px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
+  box-shadow: 10px 5px 5px black;
+}
+
+h2{
+    align-items: end;
+}
+
 
 /* Profile Card Styles */
 .profile-img {
-    height: 220px;
+    height: 320px;
     object-fit: cover;
 }
 
@@ -19,11 +43,3 @@ body {
     margin-right: 6px;
     margin-bottom: 6px;
 }
-
-.rounded {
-    width: 100px;
-    height: 100px;
-    background-color: #007bff;
-    border-radius: 50%;
-}   
-

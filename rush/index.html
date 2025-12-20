@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To do or not to do</title>
+    <title>Rush</title>
 
     <!-- Link to the CSS file -->
     <link rel="stylesheet" href="./style.css" />
@@ -31,89 +31,149 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-
-    <!-- Navbar (Header)-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark mb-5">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="" alt=""></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#mainPage"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#secondPage">Professionals Experiences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#contact">Contact</a>
-            </li>
-          </ul>
+    
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#"><img src="./img/menAtWork.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto ms-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 ms-3" aria-current="page" href="#profile">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 ms-3" aria-current="page" href="#experience">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 ms-3" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- End Navbar (Header)-->
 
     <!-- Main Content 1-->
-    <div class="container mt-5" id="mainPage">
-      <h2 class="text-center mb-4">My Profile</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque suscipit debitis alias deleniti voluptatibus iure corrupti blanditiis quasi, illum vel, assumenda modi eum maiores. Adipisci modi velit sint dignissimos incidunt.</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae libero et voluptatem temporibus expedita dicta, ullam nihil architecto dolore inventore fugit cumque impedit eum alias repellat neque placeat mollitia voluptatum?</p>
+    <div class="container mt-5" id="main-image-container">
+      <h1 class="d-flex justify-content-center" id="profile">Profile</h1>
+    <div class="main-image center-image">
+      <div class="main-image-info bg-light">
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+            typeWriter(document.querySelector('h2'));
+            });
+          </script>
+        <h2 class="text-center mb-4">Moreton e La Rocque</h2>
+        <p class="">Web Developer - JavaScript</p>
+        <p>In this project, we created a responsive web page <br>using HTML, CSS, Bootstrap and JavaScript.</p>
+      </div>
     </div>
+  </div>
     <!-- End Main Content 1 -->
 
     <!-- Main Content 2-->
-    <div class="container mt-3" id="secondPage">
-      <h2 class="text-center mb-4">Professionals Experiences</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque suscipit debitis alias deleniti voluptatibus iure corrupti blanditiis quasi, illum vel, assumenda modi eum maiores. Adipisci modi velit sint dignissimos incidunt.</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>sasa</p>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae libero et voluptatem temporibus expedita dicta, ullam nihil architecto dolore inventore fugit cumque impedit eum alias repellat neque placeat mollitia voluptatum?</p>
+    <!-- Skill 1 - Bootstrap Brain Component -->
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+          <h2 class="mb-4 display-5 text-center" id="experience">Work Experience</h2>
+          <p class="text-secondary mb-5 text-center lead fs-4">Developers with skills in Bootstrap, HTML, CSS, and JavaScript are in high demand in the tech industry. These technologies are used to build a wide range of websites and applications, from simple blogs to complex e-commerce platforms.</p>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+      </div>
     </div>
-    <!-- End Main Content 2 -->
+    <div class="container py-5">
+  <div class="row justify-content-center g-4">
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">HTML</h5>
+          <p class="card-text text-secondary fst-italic">
+             HyperText Markup Language
+          </p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%">
+              90%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">CSS</h5>
+          <p class="card-text text-secondary fst-italic">
+            Cascading Style Sheets (CSS) for web design, where it styles HTML
+          </p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:65%">
+              70%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Bootstrap</h5>
+          <p class="card-text text-secondary fst-italic">
+            Bootstrap is a front-end framework that makes it easy to create responsive websites.
+          </p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">
+              40%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">JavaScript</h5>
+          <p class="card-text text-secondary fst-italic">
+            A versatile programming language that brings web pages to life, enabling interactivity like animations, form validation, and dynamic content updates;  essentially powering anything from simple website features to complex web and software solutions. 
+          </p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:20%">
+              20%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Angular</h5>
+          <p class="card-text text-secondary fst-italic">
+            A powerful, Google-maintained platform and framework for building fast, scalable, and reliable web applications, known for its component-based architecture, TypeScript usage, built-in tools, routing, and state management, offering a complete
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:5%">
+              5%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+</section>
+<section class="bsb-skill-1">
+<!-- End Main Content 2 -->
 
     <!-- Main Content 3-->
     <div class="container mt-3">
@@ -129,10 +189,11 @@
             style="cursor: pointer"
           >
             <img
-              src="./img/profileMan.jpg"
+              src="./img/moreton.png"
               class="card-img-top profile-img"
               alt="Profile Image"
             />
+            <!--./img/profileMan.jpg-->
             <div class="card-body text-center">
               <h5 class="card-title">Anderson Moreton</h5>
               <p class="mb-1">Front-End Developer</p>
@@ -151,12 +212,13 @@
             style="cursor: pointer"
           >
             <img
-              src="./img/profileWoman.jpg"
+              src="./img/laRocque.jpeg"
               class="card-img-top profile-img"
               alt="Profile Image"
             />
+            <!--./img/profileWoman.jpg-->
             <div class="card-body text-center">
-              <h5 class="card-title">Leonardo La Roque</h5>
+              <h5 class="card-title">Leonardo La Rocque</h5>
               <p class="mb-1">Back-End Developer</p>
               <p class="text-muted">Porto, PT</p>
               <button type="button" class="btn btn-outline-dark">Contact</button>
@@ -176,29 +238,20 @@
     <!-- End Main Content -->
 
     <!-- Modal -->
-    <div class="modal fade" id="profileModal" tabindex="-1">
+    <div class="modal fade mb-5" id="profileModal" tabindex="-1">
       <div
-        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
-      >
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="modalName"></h5>
-            <button
-              type="button"
-              class="btn-close" 
-              data-bs-dismiss="modal"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
           <div class="modal-body">
             <div class="row">
               <!-- Image (30%) -->
               <div class="col-md-4">
-                <img
-                  id="modalImage"
-                  class="modal-profile-img rounded"
-                  alt="Profile Image"
-                />
+                <img id="modalImage" class="modal-profile-img rounded" alt="Profile Image" />
               </div>
 
               <!-- Content (70%) -->
@@ -222,13 +275,7 @@
 
                 <!-- Contact -->
                 <div class="text-end">
-                  <button
-                    class="btn btn-outline-dark btn-lg"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#contactInfo"
-                  >
-                    Contact
-                  </button>
+                  <button class="btn btn-outline-dark btn-lg" data-bs-toggle="collapse" data-bs-target="#contactInfo">Contact</button>
                 </div>
 
                 <div class="collapse mt-4" id="contactInfo">
@@ -251,5 +298,35 @@
     </div>
     <!-- End Modal -->
 
+  <footer class="bg-dark text-light pt-4 mt-5">
+    <div class="container text-center">
+
+    <!-- Links -->
+    <div class="mb-4">
+      <h5 class="fw-bold">Páginas</h5>
+      <ul class="list-unstyled d-inline-flex gap-3 mb-0">
+        <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+        <li><a href="#" class="text-secondary text-decoration-none">Work Experience</a></li>
+        <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Redes Sociais -->
+    <div class="mb-3">
+      <a href="https://pt.linkedin.com/" target="_blank" class="text-secondary mx-2 fs-4">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/" target="_blank" class="text-secondary mx-2 fs-4">
+        <i class="bi bi-github"></i>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-secondary" style="font-size:14px; line-height:1.4;">
+      &copy; 2025 Moreton &amp La Rocque. Todos os direitos reservados.
+    </div>
+
+    </div>
+</footer>
   </body>
 </html>

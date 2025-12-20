@@ -1,9 +1,21 @@
+//Function typeWriter - Write H2
+function typeWriter(elemento) {
+  const textoArray = elemento.innerHTML.split(''); // Take the text and divide it into letters.
+  elemento.innerHTML = ''; // Clear original content
+
+  textoArray.forEach((letra, i) => {
+    setTimeout(() => {
+      elemento.innerHTML += letra; // Add each letter
+    }, 75 * i); // 75ms delay per letter
+  });
+}
+
 // Profile Data - can be expanded or fetched from a server in a real application
 const profiles = [{
         fullName: "Anderson Moreton",
         job: "Front-End Developer",
         location: "Chaves, Portugal",
-        image: "./img/profileMan.jpg",
+        image: "./img/moreton.png",
         email: "anderson.moreton@email.com",
         phone: "+351 911 916 416",
         skills: ["JavaScript", "HTML", "CSS", "Bootstrap", "Angular"],
@@ -14,12 +26,12 @@ const profiles = [{
         ]
     },
     {
-        fullName: "Leonardo La Roque",
+        fullName: "Leonardo La Rocque",
         job: "UI/UX Designer",
         location: "Porto, Portugal",
-        image: "./img/profileWoman.jpg",
-        email: "leonardo.la.roque@email.com",
-        phone: "+351 911 916 416",
+        image: "./img/laRocque.jpeg",
+        email: "leonardo.laroque@email.com",
+        phone: "+351 918 918 414",
         skills: ["C Programming Language", "Data Structures and Algorithms", "Linux/Unix Systems"],
         experience: [
             "2+ years as a C Programming Language Developer",
@@ -42,7 +54,7 @@ document.querySelectorAll('.profile-card').forEach(card => {
 function openModal(index) {
     const p = profiles[index];
     // Populate modal fields
-    document.getElementById('modalName').innerText = p.fullName;
+
     document.getElementById('modalFullName').innerText = p.fullName;
     document.getElementById('modalJob').innerText = p.job;
     document.getElementById('modalLocation').innerText = p.location;
@@ -67,4 +79,3 @@ function openModal(index) {
 
     modal.show();
 }
-
